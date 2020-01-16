@@ -48,7 +48,7 @@ function addData() {
         return false;
     }
     else {
-        var student1 = new Student(studName, marksMaths, marksEnglish, passingYear, date);
+        var student1 = new Student(studName, marksMaths, marksEnglish, passingYear, date.toUTCString);
         student1.calculateAvg();
         arr.push(student1);
         localStorage.setItem("student", JSON.stringify(arr));
