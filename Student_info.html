@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Student Information</title>
+        <link type="text/css" rel="stylesheet" href="Student_info.css">
+    </head>
+    <body>
+        <form id="my-form">
+        <label>Student Name </label><input type="text" name="studentName"><br>
+        <label>Marks of Maths </label><input type="text" name="marksMaths"><br>
+        <label>Marks of English </label><input type="text" name="marksEnglish"><br>
+        <label>Passing Year </label><input type="text" name="passingYear"><br>
+        <input type="submit" value="SUBMIT" onclick="return addData();">        
+        <input type="button" value="CLEAR" onclick="clearData();">
+    </form>
+        <hr>
+        <div>
+            <table id="my-table" border="1">
+                <tr>
+                    <th>Student Id</th>
+                    <th>Name</th>
+                    <th>Marks Maths</th>
+                    <th>Marks English</th>
+                    <th>Average Marks</th>
+                    <th>Passing Year</th>
+                    <th>Creation Time</th>
+                </tr>
+            </table>
+        </div>
+        <script src="Student_info.js"></script>
+    </body>
+</html>
